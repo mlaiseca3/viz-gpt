@@ -86,7 +86,7 @@ function preferAzureOpenAI(): boolean {
 }
 
 async function getAzureOpenAICompletion(messages): Promise<IResponseData> {
-    const url = `${process.env.BASE_URL}/openai/deployments/${process.env.DEPLOYMENT_NAME}/chat/completions?api-version=2023-03-15-preview`;
+    const url = `${process.env.BASE_URL}/openai/deployments/${process.env.DEPLOYMENT_NAME}/chat/completions?api-version=2024-02-15-preview`;
     const response = await fetch(url, {
         method: "POST",
         // @ts-ignore
